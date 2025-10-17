@@ -72,16 +72,20 @@ export const Contact = () => {
                 </p>
               </div>
 
-              {/* Instagram Feed Embed - Replace this iframe with actual Instagram embed code */}
-              <div className="mb-6 bg-secondary/30 rounded-lg p-8 text-center">
-                <Instagram className="h-16 w-16 text-primary/40 mx-auto mb-4" />
-                <p className="font-body text-sm text-foreground/50">
-                  Instagram feed will display here once connected
-                </p>
-                <p className="font-body text-xs text-foreground/40 mt-2">
-                  Visit Instagram's embedding tool to generate your feed embed code
-                </p>
+              {/* PASTE YOUR SNAPWIDGET EMBED CODE BELOW THIS LINE */}
+              <div className="mb-6 rounded-lg overflow-hidden">
+                {/* Placeholder - Replace this entire div with your SnapWidget embed code */}
+                <div className="bg-secondary/30 rounded-lg p-8 text-center">
+                  <Instagram className="h-16 w-16 text-primary/40 mx-auto mb-4" />
+                  <p className="font-body text-sm text-foreground/50">
+                    Instagram feed will display here once connected
+                  </p>
+                  <p className="font-body text-xs text-foreground/40 mt-2">
+                    Get your embed code from SnapWidget and paste it here
+                  </p>
+                </div>
               </div>
+              {/* PASTE YOUR SNAPWIDGET EMBED CODE ABOVE THIS LINE */}
 
               <Button
                 asChild
