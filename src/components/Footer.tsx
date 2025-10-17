@@ -9,9 +9,9 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-2xl font-bold text-primary mb-4">
-              DIRT BIKE TOURS
-            </h3>
+          <h3 className="font-display text-2xl font-bold text-primary mb-4">
+            DUST AND DIRT
+          </h3>
             <p className="font-body text-foreground/70 text-sm">
               Experience the ultimate off-road adventure with expert guides and 
               premium equipment.
@@ -57,7 +57,7 @@ export const Footer = () => {
 
         <div className="pt-8 border-t border-border text-center">
           <p className="font-body text-sm text-foreground/60">
-            © {currentYear} Dirt Bike Tours. All rights reserved.
+            © {currentYear} Dust and Dirt. All rights reserved.
           </p>
         </div>
       </div>
