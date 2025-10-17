@@ -25,7 +25,7 @@ export const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center animate-fade-in">
-        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 tracking-[0.2em] whitespace-nowrap">
+        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 tracking-wide whitespace-nowrap">
           FREE DIRT BIKE LESSONS
         </h1>
         

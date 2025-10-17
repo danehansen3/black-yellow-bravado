@@ -28,7 +28,7 @@ export const Gallery = () => {
       <section id="gallery" className="py-20 bg-secondary">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+            <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4 tracking-wide">
               PREVIOUS <span className="text-primary">ADVENTURES</span>
             </h2>
             <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">

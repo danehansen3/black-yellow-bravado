@@ -41,7 +41,7 @@ export const About = () => {
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4 tracking-wide">
             MEET THE <span className="text-primary">CREW</span>
           </h2>
           <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">

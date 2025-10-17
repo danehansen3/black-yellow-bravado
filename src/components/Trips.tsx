@@ -102,7 +102,7 @@ export const Trips = () => {
     <section id="trips" className="py-20 bg-secondary">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4 tracking-wide">
             EPIC <span className="text-primary">ADVENTURES</span>
           </h2>
           <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">
@@ -155,26 +155,11 @@ export const Trips = () => {
                       </ul>
                     </div>
 
-                    {/* Trip Details */}
-                    <div className="grid grid-cols-3 gap-4 mb-6 pb-6 border-b border-border">
-                      <div className="text-center">
-                        <Calendar className="h-5 w-5 text-primary mx-auto mb-2" />
-                        <p className="font-body text-xs text-foreground/60">{trip.details.duration}</p>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-primary mb-2">{trip.details.price}</div>
-                        <p className="font-body text-xs text-foreground/60">Per Person</p>
-                      </div>
-                      <div className="text-center">
-                        <Users className="h-5 w-5 text-primary mx-auto mb-2" />
-                        <p className="font-body text-xs text-foreground/60">{trip.details.group}</p>
-                      </div>
-                    </div>
                   </div>
 
                   <Button 
                     onClick={scrollToContact}
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-display font-semibold"
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-display font-semibold mt-6"
                   >
                     CONTACT FOR PRICING
                     <ArrowRight className="ml-2 h-4 w-4" />
