@@ -13,7 +13,7 @@ export const Location = () => {
             FIND <span className="text-primary">US</span>
           </h2>
           <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">
-            Visit our base location for gear fitting, bike selection, and tour briefings.
+            Find us in Vang Vieng for gear fitting, free dirt bike lessons, and tour briefings.
           </p>
         </div>
 
@@ -31,12 +31,12 @@ export const Location = () => {
                   </div>
                   <div className="space-y-3 font-body text-foreground/70">
                     <p className="font-semibold text-foreground">
-                      Dirt Bike Tours HQ
+                      Dust & Dirt Vang Vieng
                     </p>
-                    <p>123 Adventure Road</p>
-                    <p>Mountain Valley, ST 12345</p>
+                    <p>Unnamed Road</p>
+                    <p>Vang Vieng, Laos</p>
                     <p className="pt-4 text-primary font-semibold">
-                      Open for bike pickups and returns daily
+                      Open daily for tours and lessons
                     </p>
                   </div>
                 </div>

@@ -42,11 +42,11 @@ export const About = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
-            MEET THE <span className="text-primary">TEAM</span>
+            MEET THE <span className="text-primary">CREW</span>
           </h2>
           <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">
-            Our experienced crew is dedicated to providing you with the ultimate 
-            dirt bike touring experience, combining safety with pure adrenaline.
+            Our experienced Vang Vieng-based team is dedicated to showing you the raw beauty of Laos 
+            while keeping your adventure safe and unforgettable.
           </p>
         </div>
 

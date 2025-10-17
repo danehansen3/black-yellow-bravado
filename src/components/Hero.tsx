@@ -25,14 +25,12 @@ export const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center animate-fade-in">
-        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 tracking-tight">
-          FREE DIRT
-          <span className="block text-primary mt-2">BIKE LESSONS</span>
+        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 tracking-[0.2em] whitespace-nowrap">
+          FREE DIRT BIKE LESSONS
         </h1>
         
         <p className="font-body text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl mx-auto">
-          Experience the thrill of dirt bike touring with expert guides, 
-          premium equipment, and unforgettable trails.
+          Experience the raw beauty of Laos on two wheels. Perfect for beginner and advanced riders exploring Vang Vieng's stunning terrain.
         </p>
 
         <Button 

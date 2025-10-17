@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export const Contact = () => {
-  const whatsappNumber = "1234567890"; // Replace with actual number
-  const whatsappMessage = "Hi! I'm interested in booking a dirt bike tour.";
+  const whatsappNumber = "8562059480427";
+  const whatsappMessage = "Hi! I'm interested in booking a dirt bike tour in Vang Vieng.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
   const instagramHandle = "@dustanddirtvangvieng";
   const instagramUrl = "https://www.instagram.com/dustanddirtvangvieng";
@@ -17,8 +17,8 @@ export const Contact = () => {
             GET IN <span className="text-primary">TOUCH</span>
           </h2>
           <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">
-            Ready to start your adventure? Contact us on WhatsApp or follow us 
-            on Instagram for the latest updates and tour highlights.
+            Ready to experience the raw beauty of Laos? Contact us on WhatsApp or follow us 
+            on Instagram for the latest adventure updates from Vang Vieng.
           </p>
         </div>
 
@@ -33,8 +33,8 @@ export const Contact = () => {
                 WHATSAPP
               </h3>
               <p className="font-body text-foreground/70 mb-6">
-                Get instant answers to all your questions about tours, pricing, 
-                equipment, and availability.
+                Get instant answers about our Vang Vieng tours, free dirt bike lessons, 
+                equipment, and availability. Perfect for beginners and advanced riders.
               </p>
             </div>
 
@@ -67,8 +67,8 @@ export const Contact = () => {
                   INSTAGRAM
                 </h3>
                 <p className="font-body text-foreground/70 mb-6">
-                  Follow us for daily adventure shots, tour highlights, and 
-                  behind-the-scenes action from the trails.
+                  Follow us for daily adventure shots from Vang Vieng, tour highlights, and 
+                  behind-the-scenes action exploring the raw beauty of Laos.
                 </p>
               </div>
 

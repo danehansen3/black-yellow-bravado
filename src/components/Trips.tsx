@@ -6,35 +6,83 @@ import mountainTrip from "@/assets/trip-mountain.jpg";
 
 const trips = [
   {
-    title: "Desert Dunes Expedition",
+    title: "Endurance Half Day",
     image: desertTrip,
-    description: "Navigate through breathtaking sand dunes and rocky terrain on this 3-day adventure through pristine desert landscapes. Experience the raw beauty of endless horizons and challenging trails.",
+    description: "Dive deep into Laos' raw landscapes with this full half-day experience. Perfect for riders wanting extended exploration of Vang Vieng's hidden trails and stunning scenery.",
     highlights: [
-      "3 days of guided desert riding",
-      "Professional photography included",
-      "Premium bike rentals available",
+      "6-8 hours of guided riding",
+      "Free dirt bike lessons included",
       "All safety gear provided",
+      "Explore remote trails and villages",
     ],
     details: {
-      duration: "3 Days / 2 Nights",
-      location: "Mojave Desert",
-      group: "Max 12 riders",
+      duration: "6-8 Hours",
+      price: "$250",
+      group: "2-5 riders",
     },
   },
   {
-    title: "Mountain Trail Mastery",
+    title: "Quickie",
     image: mountainTrip,
-    description: "Conquer steep inclines and technical trails through dense forests and mountain passes. This 5-day tour is perfect for experienced riders seeking the ultimate challenge and scenic rewards.",
+    description: "Short on time but big on adventure? This express half-day tour packs maximum thrills into a compact timeframe, showcasing Vang Vieng's best trails.",
     highlights: [
-      "5 days of mountain terrain",
-      "Expert trail navigation",
-      "Camping under the stars",
-      "Meals and accommodations included",
+      "4-6 hours of guided riding",
+      "Free dirt bike lessons included",
+      "All safety gear provided",
+      "Perfect for beginners and advanced riders",
     ],
     details: {
-      duration: "5 Days / 4 Nights",
-      location: "Rocky Mountains",
-      group: "Max 10 riders",
+      duration: "4-6 Hours",
+      price: "$155",
+      group: "2-5 riders",
+    },
+  },
+  {
+    title: "1 Night / 2 Day Adventure",
+    image: desertTrip,
+    description: "Experience the magic of overnight camping in the Lao wilderness. This 26-hour journey combines thrilling rides with authentic cultural immersion and starlit camping.",
+    highlights: [
+      "26 hours of exploration",
+      "Free dirt bike lessons included",
+      "Overnight camping included",
+      "All meals and gear provided",
+    ],
+    details: {
+      duration: "1 Night / 2 Days",
+      price: "$185",
+      group: "2-5 riders",
+    },
+  },
+  {
+    title: "2 Night / 3 Day Expedition",
+    image: mountainTrip,
+    description: "Our ultimate multi-day adventure through Laos' most spectacular terrain. Ride through villages, jungles, and mountains while experiencing authentic Lao hospitality.",
+    highlights: [
+      "52 hours of epic riding",
+      "Free dirt bike lessons included",
+      "2 nights camping under the stars",
+      "All meals, gear, and guides included",
+    ],
+    details: {
+      duration: "2 Nights / 3 Days",
+      price: "$330",
+      group: "2-5 riders",
+    },
+  },
+  {
+    title: "Extended Action Pack",
+    image: desertTrip,
+    description: "A premium overnight experience with extended riding time. This 28-hour adventure offers the perfect balance of riding intensity and cultural exploration.",
+    highlights: [
+      "28 hours of guided adventure",
+      "Free dirt bike lessons included",
+      "Overnight camping included",
+      "Premium trails and local experiences",
+    ],
+    details: {
+      duration: "1 Night / 2 Days",
+      price: "$225",
+      group: "2-5 riders",
     },
   },
 ];
@@ -58,8 +106,8 @@ export const Trips = () => {
             EPIC <span className="text-primary">ADVENTURES</span>
           </h2>
           <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">
-            Choose your next adrenaline-packed journey. Each tour is crafted to deliver 
-            unforgettable experiences with top-notch equipment and expert guidance.
+            Experience the raw beauty of Laos on our guided tours. Free dirt bike lessons included with every adventure. 
+            Perfect for beginners and advanced riders exploring Vang Vieng's stunning terrain.
           </p>
         </div>
 
@@ -114,8 +162,8 @@ export const Trips = () => {
                         <p className="font-body text-xs text-foreground/60">{trip.details.duration}</p>
                       </div>
                       <div className="text-center">
-                        <MapPin className="h-5 w-5 text-primary mx-auto mb-2" />
-                        <p className="font-body text-xs text-foreground/60">{trip.details.location}</p>
+                        <div className="text-2xl font-bold text-primary mb-2">{trip.details.price}</div>
+                        <p className="font-body text-xs text-foreground/60">Per Person</p>
                       </div>
                       <div className="text-center">
                         <Users className="h-5 w-5 text-primary mx-auto mb-2" />
