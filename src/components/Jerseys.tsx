@@ -17,6 +17,18 @@ const jerseys = [
     sizes: "S, M, L, XL, XXL",
     description: "Premium racing jersey with ventilated panels",
   },
+  {
+    name: "Desert Storm Jersey",
+    image: jersey1,
+    sizes: "S, M, L, XL, XXL",
+    description: "Rugged design for extreme terrain adventures",
+  },
+  {
+    name: "Trail Blazer Jersey",
+    image: jersey2,
+    sizes: "S, M, L, XL, XXL",
+    description: "Lightweight jersey perfect for long rides",
+  },
 ];
 
 export const Jerseys = () => {

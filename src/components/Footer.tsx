@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Youtube } from "lucide-react";
+import { Instagram } from "lucide-react";
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -44,28 +44,12 @@ export const Footer = () => {
             </h4>
             <div className="flex gap-4">
               <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-              >
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/dustanddirtvangvieng"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
-              >
-                <Youtube className="h-5 w-5" />
               </a>
             </div>
           </div>

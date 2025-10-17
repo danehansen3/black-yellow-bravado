@@ -22,44 +22,44 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {/* WhatsApp Card */}
-          <Card className="bg-card border-border animate-zoom-in">
-            <CardContent className="p-8 text-center">
-              <div className="mb-6">
-                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <MessageCircle className="h-10 w-10 text-primary" />
-                </div>
-                <h3 className="font-display text-2xl font-bold text-foreground mb-4">
-                  WHATSAPP
-                </h3>
-                <p className="font-body text-foreground/70 mb-6">
-                  Get instant answers to all your questions about tours, pricing, 
-                  equipment, and availability.
-                </p>
+        {/* WhatsApp Card */}
+        <Card className="bg-card border-border animate-zoom-in max-w-2xl mx-auto mb-12">
+          <CardContent className="p-8 text-center">
+            <div className="mb-6">
+              <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <MessageCircle className="h-10 w-10 text-primary" />
               </div>
-
-              <Button
-                asChild
-                size="lg"
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-display font-semibold text-lg px-8 py-6 shadow-yellow-glow hover:shadow-yellow-glow/70 transition-all"
-              >
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  CHAT NOW
-                </a>
-              </Button>
-
-              <p className="font-body text-xs text-foreground/50 mt-4">
-                Available: Mon-Fri 9AM-6PM, Sat-Sun 10AM-4PM
+              <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+                WHATSAPP
+              </h3>
+              <p className="font-body text-foreground/70 mb-6">
+                Get instant answers to all your questions about tours, pricing, 
+                equipment, and availability.
               </p>
-            </CardContent>
-          </Card>
+            </div>
 
-          {/* Instagram Card */}
+            <Button
+              asChild
+              size="lg"
+              className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-display font-semibold text-lg px-8 py-6 shadow-yellow-glow hover:shadow-yellow-glow/70 transition-all"
+            >
+              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                <MessageCircle className="mr-2 h-5 w-5" />
+                CHAT NOW
+              </a>
+            </Button>
+
+            <p className="font-body text-xs text-foreground/50 mt-4">
+              Available: Mon-Fri 9AM-6PM, Sat-Sun 10AM-4PM
+            </p>
+          </CardContent>
+        </Card>
+
+        {/* Instagram Feed & Follow */}
+        <div className="max-w-2xl mx-auto">
           <Card className="bg-card border-border animate-zoom-in" style={{ animationDelay: "0.1s" }}>
-            <CardContent className="p-8 text-center">
-              <div className="mb-6">
+            <CardContent className="p-8">
+              <div className="text-center mb-6">
                 <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Instagram className="h-10 w-10 text-primary" />
                 </div>
@@ -69,6 +69,17 @@ export const Contact = () => {
                 <p className="font-body text-foreground/70 mb-6">
                   Follow us for daily adventure shots, tour highlights, and 
                   behind-the-scenes action from the trails.
+                </p>
+              </div>
+
+              {/* Instagram Feed Embed - Replace this iframe with actual Instagram embed code */}
+              <div className="mb-6 bg-secondary/30 rounded-lg p-8 text-center">
+                <Instagram className="h-16 w-16 text-primary/40 mx-auto mb-4" />
+                <p className="font-body text-sm text-foreground/50">
+                  Instagram feed will display here once connected
+                </p>
+                <p className="font-body text-xs text-foreground/40 mt-2">
+                  Visit Instagram's embedding tool to generate your feed embed code
                 </p>
               </div>
 
@@ -83,7 +94,7 @@ export const Contact = () => {
                 </a>
               </Button>
 
-              <p className="font-body text-sm text-primary mt-4">
+              <p className="font-body text-sm text-primary mt-4 text-center">
                 {instagramHandle}
               </p>
             </CardContent>
