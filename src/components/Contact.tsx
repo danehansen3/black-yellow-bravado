@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
@@ -6,6 +6,8 @@ export const Contact = () => {
   const whatsappNumber = "1234567890"; // Replace with actual number
   const whatsappMessage = "Hi! I'm interested in booking a dirt bike tour.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+  const instagramHandle = "@dustanddirtvangvieng";
+  const instagramUrl = "https://www.instagram.com/dustanddirtvangvieng";
 
   return (
     <section id="contact" className="py-20 bg-background">
@@ -15,43 +17,78 @@ export const Contact = () => {
             GET IN <span className="text-primary">TOUCH</span>
           </h2>
           <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">
-            Ready to start your adventure? Contact us on WhatsApp for instant 
-            booking, pricing information, and any questions you may have.
+            Ready to start your adventure? Contact us on WhatsApp or follow us 
+            on Instagram for the latest updates and tour highlights.
           </p>
         </div>
 
-        <Card className="max-w-2xl mx-auto bg-card border-border animate-zoom-in">
-          <CardContent className="p-12 text-center">
-            <div className="mb-8">
-              <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <MessageCircle className="h-10 w-10 text-primary" />
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {/* WhatsApp Card */}
+          <Card className="bg-card border-border animate-zoom-in">
+            <CardContent className="p-8 text-center">
+              <div className="mb-6">
+                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <MessageCircle className="h-10 w-10 text-primary" />
+                </div>
+                <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+                  WHATSAPP
+                </h3>
+                <p className="font-body text-foreground/70 mb-6">
+                  Get instant answers to all your questions about tours, pricing, 
+                  equipment, and availability.
+                </p>
               </div>
-              <h3 className="font-display text-2xl font-bold text-foreground mb-4">
-                MESSAGE US ON WHATSAPP
-              </h3>
-              <p className="font-body text-foreground/70 mb-8">
-                Our team responds within minutes during business hours. 
-                Get instant answers to all your questions about tours, pricing, 
-                equipment, and availability.
+
+              <Button
+                asChild
+                size="lg"
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-display font-semibold text-lg px-8 py-6 shadow-yellow-glow hover:shadow-yellow-glow/70 transition-all"
+              >
+                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="mr-2 h-5 w-5" />
+                  CHAT NOW
+                </a>
+              </Button>
+
+              <p className="font-body text-xs text-foreground/50 mt-4">
+                Available: Mon-Fri 9AM-6PM, Sat-Sun 10AM-4PM
               </p>
-            </div>
+            </CardContent>
+          </Card>
 
-            <Button
-              asChild
-              size="lg"
-              className="w-full md:w-auto bg-primary hover:bg-primary/90 text-primary-foreground font-display font-semibold text-lg px-12 py-6 shadow-yellow-glow hover:shadow-yellow-glow/70 transition-all"
-            >
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="mr-2 h-5 w-5" />
-                CHAT ON WHATSAPP
-              </a>
-            </Button>
+          {/* Instagram Card */}
+          <Card className="bg-card border-border animate-zoom-in" style={{ animationDelay: "0.1s" }}>
+            <CardContent className="p-8 text-center">
+              <div className="mb-6">
+                <div className="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Instagram className="h-10 w-10 text-primary" />
+                </div>
+                <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+                  INSTAGRAM
+                </h3>
+                <p className="font-body text-foreground/70 mb-6">
+                  Follow us for daily adventure shots, tour highlights, and 
+                  behind-the-scenes action from the trails.
+                </p>
+              </div>
 
-            <p className="font-body text-sm text-foreground/50 mt-6">
-              Available: Mon-Fri 9AM-6PM, Sat-Sun 10AM-4PM
-            </p>
-          </CardContent>
-        </Card>
+              <Button
+                asChild
+                size="lg"
+                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-display font-semibold text-lg px-8 py-6 shadow-yellow-glow hover:shadow-yellow-glow/70 transition-all"
+              >
+                <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
+                  <Instagram className="mr-2 h-5 w-5" />
+                  FOLLOW US
+                </a>
+              </Button>
+
+              <p className="font-body text-sm text-primary mt-4">
+                {instagramHandle}
+              </p>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </section>
   );

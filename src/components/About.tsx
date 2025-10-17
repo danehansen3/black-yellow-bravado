@@ -22,6 +22,18 @@ const teamMembers = [
     bio: "Certified instructor with 1000+ tours led",
     image: team3,
   },
+  {
+    name: "Alex Thompson",
+    role: "Trail Scout",
+    bio: "Local expert who knows every hidden path",
+    image: team1,
+  },
+  {
+    name: "Emma Davis",
+    role: "Photography Lead",
+    bio: "Capturing your epic moments since 2018",
+    image: team2,
+  },
 ];
 
 export const About = () => {
@@ -38,7 +50,7 @@ export const About = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
             <Card 
               key={member.name} 

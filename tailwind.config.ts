@@ -49,8 +49,8 @@ export default {
         },
       },
       fontFamily: {
-        'display': ['Rajdhani', 'sans-serif'],
-        'body': ['Roboto', 'sans-serif'],
+        'display': ['Bangers', 'cursive'],
+        'body': ['Bangers', 'cursive'],
       },
       boxShadow: {
         'yellow-glow': 'var(--yellow-glow)',
