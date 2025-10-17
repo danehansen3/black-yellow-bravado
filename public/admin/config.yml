@@ -1,0 +1,86 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "src/assets"
+public_folder: "/src/assets"
+
+collections:
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "general"
+        label: "General Settings"
+        file: "src/data/settings.json"
+        fields:
+          - { label: "Site Title", name: "title", widget: "string" }
+          - { label: "WhatsApp Number", name: "whatsapp", widget: "string" }
+          - { label: "Address", name: "address", widget: "text" }
+          - { label: "Google Maps Embed URL", name: "mapUrl", widget: "string" }
+
+  - name: "team"
+    label: "Team Members"
+    folder: "src/data/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
+      - { label: "Bio", name: "bio", widget: "text" }
+      - { label: "Photo", name: "image", widget: "image" }
+      - { label: "Order", name: "order", widget: "number", default: 0 }
+
+  - name: "trips"
+    label: "Trip Information"
+    folder: "src/data/trips"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Highlights", name: "highlights", widget: "list" }
+      - label: "Details"
+        name: "details"
+        widget: "object"
+        fields:
+          - { label: "Duration", name: "duration", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Group Size", name: "group", widget: "string" }
+      - { label: "Order", name: "order", widget: "number", default: 0 }
+
+  - name: "jerseys"
+    label: "Jerseys"
+    folder: "src/data/jerseys"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Sizes", name: "sizes", widget: "string" }
+      - { label: "Order", name: "order", widget: "number", default: 0 }
+
+  - name: "galleries"
+    label: "Previous Trip Galleries"
+    folder: "src/data/galleries"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Trip Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "string" }
+      - { label: "Thumbnail", name: "thumbnail", widget: "image" }
+      - label: "Photos"
+        name: "photos"
+        widget: "list"
+        field: { label: "Photo", name: "photo", widget: "image" }
+      - { label: "Order", name: "order", widget: "number", default: 0 }
+
+  - name: "contract"
+    label: "Tour Contract"
+    files:
+      - name: "contract"
+        label: "Contract PDF"
+        file: "src/data/contract.json"
+        fields:
+          - { label: "PDF File", name: "pdf", widget: "file" }
