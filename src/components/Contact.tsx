@@ -72,20 +72,43 @@ export const Contact = () => {
                 </p>
               </div>
 
-              {/* PASTE YOUR SNAPWIDGET EMBED CODE BELOW THIS LINE */}
-              <div className="mb-6 rounded-lg overflow-hidden">
-                {/* Placeholder - Replace this entire div with your SnapWidget embed code */}
-                <div className="bg-secondary/30 rounded-lg p-8 text-center">
-                  <Instagram className="h-16 w-16 text-primary/40 mx-auto mb-4" />
-                  <p className="font-body text-sm text-foreground/50">
-                    Instagram feed will display here once connected
-                  </p>
-                  <p className="font-body text-xs text-foreground/40 mt-2">
-                    Get your embed code from SnapWidget and paste it here
-                  </p>
+              {/* Instagram Posts Grid */}
+              <div className="mb-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                
+                {/* POST 1 - PASTE INSTAGRAM EMBED CODE BELOW */}
+                <div className="instagram-post-wrapper">
+                  {/* Replace this placeholder div with your first Instagram embed code */}
+                  <div className="bg-secondary/30 rounded-lg p-8 text-center aspect-square flex flex-col items-center justify-center">
+                    <Instagram className="h-12 w-12 text-primary/40 mb-2" />
+                    <p className="font-body text-xs text-foreground/50">Post 1</p>
+                  </div>
                 </div>
+                {/* POST 1 - PASTE INSTAGRAM EMBED CODE ABOVE */}
+
+                {/* POST 2 - PASTE INSTAGRAM EMBED CODE BELOW */}
+                <div className="instagram-post-wrapper">
+                  {/* Replace this placeholder div with your second Instagram embed code */}
+                  <div className="bg-secondary/30 rounded-lg p-8 text-center aspect-square flex flex-col items-center justify-center">
+                    <Instagram className="h-12 w-12 text-primary/40 mb-2" />
+                    <p className="font-body text-xs text-foreground/50">Post 2</p>
+                  </div>
+                </div>
+                {/* POST 2 - PASTE INSTAGRAM EMBED CODE ABOVE */}
+
+                {/* POST 3 - PASTE INSTAGRAM EMBED CODE BELOW */}
+                <div className="instagram-post-wrapper">
+                  {/* Replace this placeholder div with your third Instagram embed code */}
+                  <div className="bg-secondary/30 rounded-lg p-8 text-center aspect-square flex flex-col items-center justify-center">
+                    <Instagram className="h-12 w-12 text-primary/40 mb-2" />
+                    <p className="font-body text-xs text-foreground/50">Post 3</p>
+                  </div>
+                </div>
+                {/* POST 3 - PASTE INSTAGRAM EMBED CODE ABOVE */}
+
               </div>
-              {/* PASTE YOUR SNAPWIDGET EMBED CODE ABOVE THIS LINE */}
+
+              {/* Instagram Embed Script - Only include once */}
+              <script async src="//www.instagram.com/embed.js"></script>
 
               <Button
                 asChild
