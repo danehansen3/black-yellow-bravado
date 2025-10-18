@@ -7,6 +7,7 @@ import { Gallery } from "@/components/Gallery";
 import { Contact } from "@/components/Contact";
 import { Location } from "@/components/Location";
 import { Contract } from "@/components/Contract";
+import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -21,6 +22,7 @@ const Index = () => {
       <Contact />
       <Location />
       <Contract />
+      <FAQ />
       <Footer />
     </div>
   );
