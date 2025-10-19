@@ -13,17 +13,24 @@ export const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Video with Overlay */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover object-center"
-        src="/videos/DraftResource_1745057607.926917.MOV"
-        autoPlay
-        loop
-        muted
-        playsInline
-      />
-      <div className="absolute inset-0 bg-black/60" />
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black"
+    >
+      {/* Background YouTube Video */}
+      <div className="absolute inset-0 overflow-hidden">
+        <iframe
+          className="absolute top-1/2 left-1/2 w-[177.78vh] h-[100vw] min-w-[177.78vh] min-h-[100vw] transform -translate-x-1/2 -translate-y-1/2"
+          src="https://www.youtube.com/embed/y_RmOjkRXHk?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&fs=0&loop=1&playlist=y_RmOjkRXHk&enablejsapi=1"
+          title="Dust and Dirt Adventure"
+          frameBorder="0"
+          allow="autoplay; fullscreen"
+          style={{ pointerEvents: "none" }}
+        />
+      </div>
+
+      {/* Dark Overlay (to hide UI flash and ensure text readability) */}
+      <div className="absolute inset-0 bg-black/70 z-[5]" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center animate-fade-in">
@@ -46,7 +53,7 @@ export const Hero = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-10">
         <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
           <div className="w-1 h-3 bg-primary rounded-full mt-2" />
         </div>

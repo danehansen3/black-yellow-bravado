@@ -15,7 +15,7 @@ import gal9 from "@/assets/gal9.jpg";
 import gal10 from "@/assets/gal10.jpg";
 import gal11 from "@/assets/gal11.jpg";
 import gal12 from "@/assets/gal12.jpg";
-import gal13 from "@/assets/gal13.jpg";
+// import gal13 from "@/assets/gal13.jpg";
 import gal14 from "@/assets/gal14.jpg";
 import gal15 from "@/assets/gal15.jpg";
 import gal16 from "@/assets/gal16.jpg";
@@ -33,7 +33,7 @@ const pastTrips = [
     title: "Gallery",
     thumbnail: gal4,
     date: "2024-2025",
-    photos: [gal1, gal2, gal3, gal4, gal5, gal6, gal8, gal9, gal10, gal11, gal12, gal13, gal14, gal15, gal16],
+    photos: [gal1, gal2, gal3, gal4, gal5, gal6, gal8, gal9, gal10, gal11, gal12, gal14, gal15, gal16],
   },
 ];
 
