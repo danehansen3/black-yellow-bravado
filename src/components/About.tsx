@@ -1,38 +1,41 @@
 import { Card, CardContent } from "@/components/ui/card";
-import team1 from "@/assets/team-1.jpg";
-import team2 from "@/assets/team-2.jpg";
-import team3 from "@/assets/team-3.jpg";
+import johnnie from "@/assets/johnnie.jpg";
+import mony from "@/assets/mony.jpg";
+import tar from "@/assets/tar.jpg";
+import richie from "@/assets/richie.jpg";
+import sarah from "@/assets/sarah.jpg";
+import aboutImage from "@/assets/about.jpg";
 
 const teamMembers = [
   {
-    name: "Jake Morrison",
-    role: "Lead Tour Guide",
-    bio: "15 years of off-road racing experience",
-    image: team1,
+    name: "Johnnie Sampasong",
+    role: "Owner",
+    bio: "Founder of Dust & Dirt. With many years of riding experience, He's the man you can count on for organizing a trip of a lifetime!",
+    image: johnnie,
   },
   {
-    name: "Sarah Chen",
-    role: "Head Mechanic",
-    bio: "Expert in dirt bike maintenance and safety",
-    image: team2,
+    name: "Mony Silijalern",
+    role: "Owner",
+    bio: "Cofounder of Dust & Dirt. A very skilled off-road rider ready to lead the team to success. If you want someone to complete a challenging task, count on Mony.",
+    image: mony,
   },
   {
-    name: "Mike Rodriguez",
-    role: "Safety Director",
-    bio: "Certified instructor with 1000+ tours led",
-    image: team3,
+    name: "Tar Chantavong",
+    role: "Guide",
+    bio: "Head mechanic/expert tour guide. A very skilled off-road rider and a grease monkey, a guy with constant smiles and passionate enthusiasm for providing an unforgettable experience.",
+    image: tar,
   },
   {
-    name: "Alex Thompson",
-    role: "Trail Scout",
-    bio: "Local expert who knows every hidden path",
-    image: team1,
+    name: "Richie Carr",
+    role: "Guide",
+    bio: "Tour guide/marketing assistant. He has mastered scuba diving and now off-road riding, adventure is in his blood. A certified instructor full of energy and knowledge.",
+    image: richie,
   },
   {
-    name: "Emma Davis",
-    role: "Photography Lead",
-    bio: "Capturing your epic moments since 2018",
-    image: team2,
+    name: "Sarah Boswijk",
+    role: "Owner",
+    bio: "Cofounder of Dust & Dirt. A brilliant planner who can make things happen, she's who you can count on when it comes to organizing an unforgettable tour.",
+    image: sarah,
   },
 ];
 
@@ -40,6 +43,44 @@ export const About = () => {
   return (
     <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
+        {/* About Us Section */}
+        <div className="text-center mb-16 animate-fade-in">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4 tracking-wide">
+            ABOUT <span className="text-primary">US</span>
+          </h2>
+        </div>
+
+        <Card className="bg-card border-border overflow-hidden animate-zoom-in max-w-5xl mx-auto mb-20">
+          <div className="grid md:grid-cols-2 gap-0">
+            {/* Image */}
+            <div className="h-96 md:h-full overflow-hidden">
+              <img
+                src={aboutImage}
+                alt="Dust and Dirt Adventure"
+                className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+              />
+            </div>
+
+            {/* Content */}
+            <CardContent className="p-8 flex flex-col justify-center">
+              <div className="space-y-6">
+                <p className="font-body text-base md:text-xl text-foreground/85 leading-relaxed">
+                  A tour company that offers exhilarating off-road dirt bike experiences through the stunning landscapes of Laos. Designed for both beginners and experienced riders, their guided tours take adventurers deep into the rugged mountains just north of Vang Vieng, where breathtaking scenery, challenging trails, and an authentic outdoor experience await. Whether you're looking for a quick adrenaline rush or a multi-day adventure, Dust and Dirt provides a unique way to explore the unspoiled beauty of the Lao countryside.
+                </p>
+                
+                <p className="font-body text-base md:text-xl text-foreground/85 leading-relaxed">
+                  Riders can expect to traverse diverse terrains, from rocky paths and dense forests to open fields with panoramic mountain views. Our tours are well-structured to ensure both excitement and safety, with experienced guides leading the way and providing expert instruction. Along the journey, participants can enjoy scenic stops, interact with local communities, and experience the thrill of off-road riding in one of Southeast Asia's most picturesque regions. For those opting for multi-day tours, the adventure continues with camping under the stars, offering a truly immersive experience in nature.
+                </p>
+                
+                <p className="font-body text-base md:text-xl text-foreground/85 leading-relaxed">
+                  Beyond just a dirt biking trip, Dust and Dirt creates unforgettable memories for adventurers who crave something beyond the usual tourist trails. Our commitment to high-quality bikes, professional guidance, and an adventurous spirit makes them a top choice for thrill-seekers visiting Laos. Whether you're an off-road enthusiast or a first-timer looking for a once-in-a-lifetime experience, Dust and Dirt promises an epic ride through the heart of the Lao wilderness.
+                </p>
+              </div>
+            </CardContent>
+          </div>
+        </Card>
+
+        {/* Meet the Crew Section */}
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4 tracking-wide">
             MEET THE <span className="text-primary">CREW</span>

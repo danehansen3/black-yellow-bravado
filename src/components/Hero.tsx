@@ -1,6 +1,5 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-bg.jpg";
 
 export const Hero = () => {
   const scrollToContact = () => {
@@ -15,25 +14,28 @@ export const Hero = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-black/60" />
-      </div>
+      {/* Background Video with Overlay */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover object-center"
+        src="/videos/DraftResource_1745057607.926917.MOV"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+      <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center animate-fade-in">
         <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 tracking-wide leading-tight">
-        FREE DIRT BIKE <br className="sm:hidden" /> LESSONS
-      </h1>
+          FREE DIRT BIKE <br className="sm:hidden" /> LESSONS
+        </h1>
 
         <p className="font-body text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl mx-auto">
           Experience the raw beauty of Laos on two wheels. Perfect for beginner and advanced riders exploring Vang Vieng's stunning terrain.
         </p>
 
-        <Button 
+        <Button
           onClick={scrollToContact}
           size="lg"
           className="font-display text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground shadow-yellow-glow hover:shadow-yellow-glow/70 transition-all duration-300"

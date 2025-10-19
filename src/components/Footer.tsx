@@ -1,4 +1,5 @@
 import { Instagram } from "lucide-react";
+import { SiTiktok } from "react-icons/si"; // TikTok icon
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,22 +10,21 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div>
-          <h3 className="font-display text-2xl font-bold text-primary mb-4">
-            DUST AND DIRT
-          </h3>
-            <p className="font-body text-foreground/70 text-sm">
-              Experience the ultimate off-road adventure with expert guides and 
-              premium equipment.
+            <h3 className="font-display text-2xl font-bold text-primary mb-4">
+              DUST AND DIRT
+            </h3>
+            <p className="font-body text-foreground/70 text-sm max-w-xs">
+              Experience the ultimate off-road adventure with expert guides and premium equipment.
             </p>
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="md:pl-8 lg:pl-12">
             <h4 className="font-display text-lg font-semibold text-foreground mb-4">
               QUICK LINKS
             </h4>
             <ul className="space-y-2">
-              {["About", "Trips", "Jerseys", "Gallery", "Contact"].map((link) => (
+              {["About", "Trips", "Jerseys", "Gallery", "Bikes", "Contact", "FAQ"].map((link) => (
                 <li key={link}>
                   <a
                     href={`#${link.toLowerCase()}`}
@@ -43,6 +43,7 @@ export const Footer = () => {
               FOLLOW US
             </h4>
             <div className="flex gap-4">
+              {/* Instagram */}
               <a
                 href="https://www.instagram.com/dustanddirtvangvieng"
                 target="_blank"
@@ -51,10 +52,21 @@ export const Footer = () => {
               >
                 <Instagram className="h-5 w-5" />
               </a>
+
+              {/* TikTok */}
+              <a
+                href="https://www.tiktok.com/@dustanddirtvangvieng"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-foreground hover:bg-primary hover:text-primary-foreground transition-colors"
+              >
+                <SiTiktok className="h-4 w-4" />
+              </a>
             </div>
           </div>
         </div>
 
+        {/* Bottom Line */}
         <div className="pt-8 border-t border-border text-center">
           <p className="font-body text-sm text-foreground/60">
             © {currentYear} Dust and Dirt. All rights reserved.

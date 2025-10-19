@@ -62,23 +62,23 @@ export const FAQ = () => {
           <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
             FREQUENTLY ASKED <span className="text-primary">QUESTIONS</span>
           </h2>
-          <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">
+          <p className="font-body text-xl text-foreground/70 max-w-2xl mx-auto">
             Everything you need to know about our dirt bike tours in Laos
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto animate-zoom-in">
-          <Accordion type="single" collapsible className="space-y-4">
+          <Accordion type="single" collapsible className="space-y-8">
             {faqData.map((faq, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
                 className="bg-card border-border rounded-lg px-6 border"
               >
-                <AccordionTrigger className="font-display text-left text-lg font-semibold text-foreground hover:text-primary">
+                <AccordionTrigger className="font-display text-left text-2xl font-semibold text-foreground hover:text-primary">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="font-body text-foreground/80 leading-relaxed">
+                <AccordionContent className="font-body text-xl font-medium text-foreground/80 leading-relaxed tracking-wide">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

@@ -1,14 +1,18 @@
-import { ArrowRight, MapPin, Calendar, Users } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import desertTrip from "@/assets/trip-desert.jpg";
-import mountainTrip from "@/assets/trip-mountain.jpg";
+import trip1 from "@/assets/trip1.jpg";
+import trip2 from "@/assets/trip2.jpg";
+import trip3 from "@/assets/trip3.jpg";
+import trip4 from "@/assets/trip4.jpg";
+import trip5 from "@/assets/trip5.jpg";
 
 const trips = [
   {
     title: "Endurance Half Day",
-    image: desertTrip,
-    description: "Dive deep into Laos' raw landscapes with this full half-day experience. Perfect for riders wanting extended exploration of Vang Vieng's hidden trails and stunning scenery.",
+    image: trip1,
+    description:
+      "Dive deep into Laos' raw landscapes with this full half-day experience. Perfect for riders wanting extended exploration of Vang Vieng's hidden trails and stunning scenery.",
     highlights: [
       "6-8 hours of guided riding",
       "Free dirt bike lessons included",
@@ -23,8 +27,9 @@ const trips = [
   },
   {
     title: "Quickie",
-    image: mountainTrip,
-    description: "Short on time but big on adventure? This express half-day tour packs maximum thrills into a compact timeframe, showcasing Vang Vieng's best trails.",
+    image: trip2,
+    description:
+      "Short on time but big on adventure? This express half-day tour packs maximum thrills into a compact timeframe, showcasing Vang Vieng's best trails.",
     highlights: [
       "4-6 hours of guided riding",
       "Free dirt bike lessons included",
@@ -39,8 +44,9 @@ const trips = [
   },
   {
     title: "1 Night / 2 Day Adventure",
-    image: desertTrip,
-    description: "Experience the magic of overnight camping in the Lao wilderness. This 26-hour journey combines thrilling rides with authentic cultural immersion and starlit camping.",
+    image: trip3,
+    description:
+      "Experience the magic of overnight camping in the Lao wilderness. This 26-hour journey combines thrilling rides with authentic cultural immersion and starlit camping.",
     highlights: [
       "26 hours of exploration",
       "Free dirt bike lessons included",
@@ -55,8 +61,9 @@ const trips = [
   },
   {
     title: "2 Night / 3 Day Expedition",
-    image: mountainTrip,
-    description: "Our ultimate multi-day adventure through Laos' most spectacular terrain. Ride through villages, jungles, and mountains while experiencing authentic Lao hospitality.",
+    image: trip4,
+    description:
+      "Our ultimate multi-day adventure through Laos' most spectacular terrain. Ride through villages, jungles, and mountains while experiencing authentic Lao hospitality.",
     highlights: [
       "52 hours of epic riding",
       "Free dirt bike lessons included",
@@ -71,8 +78,9 @@ const trips = [
   },
   {
     title: "Extended Action Pack",
-    image: desertTrip,
-    description: "A premium overnight experience with extended riding time. This 28-hour adventure offers the perfect balance of riding intensity and cultural exploration.",
+    image: trip5,
+    description:
+      "A premium overnight experience with extended riding time. This 28-hour adventure offers the perfect balance of riding intensity and cultural exploration.",
     highlights: [
       "28 hours of guided adventure",
       "Free dirt bike lessons included",
@@ -106,36 +114,37 @@ export const Trips = () => {
             EPIC <span className="text-primary">ADVENTURES</span>
           </h2>
           <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">
-            Experience the raw beauty of Laos on our guided tours. Free dirt bike lessons included with every adventure. 
-            Perfect for beginners and advanced riders exploring Vang Vieng's stunning terrain.
+            Experience the raw beauty of Laos on our guided tours. Free dirt
+            bike lessons included with every adventure. Perfect for beginners
+            and advanced riders exploring Vang Vieng's stunning terrain.
           </p>
         </div>
 
         <div className="space-y-12">
           {trips.map((trip, index) => (
-            <Card 
+            <Card
               key={trip.title}
-              className="bg-card border-border overflow-hidden animate-slide-in-left"
+              className="bg-card border-border overflow-hidden animate-slide-in-left h-[620px]"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="grid md:grid-cols-2 gap-0">
+              <div className="grid md:grid-cols-2 gap-0 h-full items-stretch">
                 {/* Image */}
-                <div className="relative h-64 md:h-auto overflow-hidden">
+                <div className="relative overflow-hidden flex h-full">
                   <img
                     src={trip.image}
                     alt={trip.title}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                    className="object-cover object-center w-full h-full hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent" />
                 </div>
 
                 {/* Content */}
-                <CardContent className="p-8 flex flex-col justify-between">
+                <CardContent className="p-8 flex flex-col justify-between h-full">
                   <div>
                     <h3 className="font-display text-3xl font-bold text-foreground mb-4">
                       {trip.title}
                     </h3>
-                    
+
                     <p className="font-body text-foreground/80 mb-6 leading-relaxed">
                       {trip.description}
                     </p>
@@ -147,17 +156,19 @@ export const Trips = () => {
                       </h4>
                       <ul className="space-y-2">
                         {trip.highlights.map((highlight) => (
-                          <li key={highlight} className="font-body text-foreground/70 flex items-start">
+                          <li
+                            key={highlight}
+                            className="font-body text-foreground/70 flex items-start"
+                          >
                             <span className="text-primary mr-2">▸</span>
                             {highlight}
                           </li>
                         ))}
                       </ul>
                     </div>
-
                   </div>
 
-                  <Button 
+                  <Button
                     onClick={scrollToContact}
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-display font-semibold mt-6"
                   >

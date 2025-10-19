@@ -1,8 +1,12 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import jersey1 from "@/assets/jersey-1.jpg";
-import jersey2 from "@/assets/jersey-2.jpg";
+import jersey1 from "@/assets/jersey_1.jpg";
+import jersey2 from "@/assets/jersey_2.jpg";
+import jersey3 from "@/assets/jersey_3.jpg";
+import jersey4 from "@/assets/jersey_4.jpg";
+import jersey5 from "@/assets/jersey_5.jpg";
+import jersey6 from "@/assets/jersey_6.jpg";
 
 const jerseys = [
   {
@@ -19,13 +23,25 @@ const jerseys = [
   },
   {
     name: "Desert Storm Jersey",
-    image: jersey1,
+    image: jersey3,
     sizes: "S, M, L, XL, XXL",
     description: "Rugged design for extreme terrain adventures",
   },
   {
     name: "Trail Blazer Jersey",
-    image: jersey2,
+    image: jersey4,
+    sizes: "S, M, L, XL, XXL",
+    description: "Lightweight jersey perfect for long rides",
+  },
+    {
+    name: "Trail Blazer Jersey",
+    image: jersey5,
+    sizes: "S, M, L, XL, XXL",
+    description: "Lightweight jersey perfect for long rides",
+  },
+    {
+    name: "Trail Blazer Jersey",
+    image: jersey6,
     sizes: "S, M, L, XL, XXL",
     description: "Lightweight jersey perfect for long rides",
   },
