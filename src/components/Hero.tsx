@@ -17,15 +17,16 @@ export const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black"
     >
-      {/* Background YouTube Video (fills screen, cropped for cinematic fit) */}
+      {/* Background Mux Video (fills screen, cropped for cinematic fit) */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 w-[56.25vw] h-[100vh] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/y_RmOjkRXHk?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&fs=0&loop=1&playlist=y_RmOjkRXHk&playsinline=1"
+            src="https://player.mux.com/GamoxagEeOSLhMvs1BmDSCeBr85ofr01UnkSZZ9td61Q?metadata-video-title=DustandDirtVideo&video-title=DustandDirtVideo&autoplay=true&muted=true&loop=true&preload=auto"
             title="Dust and Dirt Adventure"
             frameBorder="0"
-            allow="autoplay; fullscreen"
+            allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture"
+            allowFullScreen
             style={{
               width: "100%",
               height: "100%",
