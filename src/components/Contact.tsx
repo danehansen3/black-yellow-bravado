@@ -109,7 +109,7 @@ export const Contact = () => {
               <div className="mb-6 space-y-4 flex flex-col items-center">
                 {/* <div className="max-w-md w-full" dangerouslySetInnerHTML={{ __html: post1 }} /> */}
                 <div className="max-w-md w-full" dangerouslySetInnerHTML={{ __html: post2 }} />
-                <div className="max-w-md w-full" dangerouslySetInnerHTML={{ __html: post3 }} />
+                {/* <div className="max-w-md w-full" dangerouslySetInnerHTML={{ __html: post3 }} /> */}
               </div>
 
               <Button

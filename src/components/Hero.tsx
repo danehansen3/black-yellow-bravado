@@ -17,19 +17,26 @@ export const Hero = () => {
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black"
     >
-      {/* Background YouTube Video */}
+      {/* Background YouTube Video (fills screen, cropped for cinematic fit) */}
       <div className="absolute inset-0 overflow-hidden">
-        <iframe
-          className="absolute top-1/2 left-1/2 w-[177.78vh] h-[100vw] min-w-[177.78vh] min-h-[100vw] transform -translate-x-1/2 -translate-y-1/2"
-          src="https://www.youtube.com/embed/y_RmOjkRXHk?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&fs=0&loop=1&playlist=y_RmOjkRXHk&enablejsapi=1"
-          title="Dust and Dirt Adventure"
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          style={{ pointerEvents: "none" }}
-        />
+        <div className="absolute top-1/2 left-1/2 w-[56.25vw] h-[100vh] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2">
+          <iframe
+            className="w-full h-full"
+            src="https://www.youtube.com/embed/y_RmOjkRXHk?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&fs=0&loop=1&playlist=y_RmOjkRXHk"
+            title="Dust and Dirt Adventure"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              pointerEvents: "none",
+            }}
+          />
+        </div>
       </div>
 
-      {/* Dark Overlay (to hide UI flash and ensure text readability) */}
+      {/* Dark Overlay for Readability */}
       <div className="absolute inset-0 bg-black/70 z-[5]" />
 
       {/* Content */}
@@ -39,7 +46,8 @@ export const Hero = () => {
         </h1>
 
         <p className="font-body text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl mx-auto">
-          Experience the raw beauty of Laos on two wheels. Perfect for beginner and advanced riders exploring Vang Vieng's stunning terrain.
+          Experience the raw beauty of Laos on two wheels. Perfect for beginner
+          and advanced riders exploring Vang Vieng's stunning terrain.
         </p>
 
         <Button

@@ -4,7 +4,7 @@ import mony from "@/assets/mony.jpg";
 import tar from "@/assets/tar.jpg";
 import richie from "@/assets/richie.jpg";
 import sarah from "@/assets/sarah.jpg";
-import aboutImage from "@/assets/about.jpg";
+import aboutImage from "@/assets/gal3.jpg";
 
 const teamMembers = [
   {
@@ -50,35 +50,70 @@ export const About = () => {
           </h2>
         </div>
 
-        <Card className="bg-card border-border overflow-hidden animate-zoom-in max-w-5xl mx-auto mb-20">
-          <div className="grid md:grid-cols-2 gap-0">
-            {/* Image */}
-            <div className="h-96 md:h-full overflow-hidden">
-              <img
-                src={aboutImage}
-                alt="Dust and Dirt Adventure"
-                className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-              />
-            </div>
+        {/* Desktop Layout */}
+        <div className="hidden md:block mb-20">
+          <Card className="bg-card border-border overflow-hidden animate-zoom-in max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 md:h-full">
+              {/* Image */}
+              <div className="overflow-hidden md:h-full">
+                <img
+                  src={aboutImage}
+                  alt="Dust and Dirt Adventure"
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
+                />
+              </div>
 
-            {/* Content */}
-            <CardContent className="p-8 flex flex-col justify-center">
-              <div className="space-y-6">
-                <p className="font-body text-base md:text-xl text-foreground/85 leading-relaxed">
-                  A tour company that offers exhilarating off-road dirt bike experiences through the stunning landscapes of Laos. Designed for both beginners and experienced riders, their guided tours take adventurers deep into the rugged mountains just north of Vang Vieng, where breathtaking scenery, challenging trails, and an authentic outdoor experience await. Whether you're looking for a quick adrenaline rush or a multi-day adventure, Dust and Dirt provides a unique way to explore the unspoiled beauty of the Lao countryside.
+              {/* Content */}
+              <CardContent className="p-8 flex flex-col justify-center">
+                <div className="space-y-6">
+                  <p className="font-body text-base md:text-lg text-foreground/85 leading-relaxed">
+                    A tour company that offers exhilarating off-road dirt bike experiences through the stunning landscapes of Laos. Designed for both beginners and experienced riders, their guided tours take adventurers deep into the rugged mountains just north of Vang Vieng, where breathtaking scenery, challenging trails, and an authentic outdoor experience await. Whether you're looking for a quick adrenaline rush or a multi-day adventure, Dust and Dirt provides a unique way to explore the unspoiled beauty of the Lao countryside.
+                  </p>
+
+                  <p className="font-body text-base md:text-lg text-foreground/85 leading-relaxed">
+                    Riders can expect to traverse diverse terrains, from rocky paths and dense forests to open fields with panoramic mountain views. Our tours are well-structured to ensure both excitement and safety, with experienced guides leading the way and providing expert instruction. Along the journey, participants can enjoy scenic stops, interact with local communities, and experience the thrill of off-road riding in one of Southeast Asia's most picturesque regions. For those opting for multi-day tours, the adventure continues with camping under the stars, offering a truly immersive experience in nature.
+                  </p>
+
+                  <p className="font-body text-base md:text-lg text-foreground/85 leading-relaxed">
+                    Beyond just a dirt biking trip, Dust and Dirt creates unforgettable memories for adventurers who crave something beyond the usual tourist trails. Our commitment to high-quality bikes, professional guidance, and an adventurous spirit makes them a top choice for thrill-seekers visiting Laos. Whether you're an off-road enthusiast or a first-timer looking for a once-in-a-lifetime experience, Dust and Dirt promises an epic ride through the heart of the Lao wilderness.
+                  </p>
+                </div>
+              </CardContent>
+            </div>
+          </Card>
+        </div>
+
+        {/* Mobile Layout - Text Overlay */}
+        <div className="md:hidden mb-20 animate-zoom-in">
+          <div className="relative overflow-hidden rounded-lg flex flex-col justify-center min-h-[500px]">
+            {/* Background Image */}
+            <img
+              src={aboutImage}
+              alt="Dust and Dirt Adventure"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+
+            {/* Dark Gradient Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent" />
+
+            {/* Text Overlay */}
+            <div className="relative z-10 p-6 max-h-full overflow-y-auto">
+              <div className="space-y-4 text-foreground/90">
+                <p className="font-body text-sm leading-relaxed">
+                  A tour company that offers exhilarating off-road dirt bike experiences through the stunning landscapes of Laos. Designed for both beginners and experienced riders, their guided tours take adventurers deep into the rugged mountains just north of Vang Vieng.
                 </p>
-                
-                <p className="font-body text-base md:text-xl text-foreground/85 leading-relaxed">
-                  Riders can expect to traverse diverse terrains, from rocky paths and dense forests to open fields with panoramic mountain views. Our tours are well-structured to ensure both excitement and safety, with experienced guides leading the way and providing expert instruction. Along the journey, participants can enjoy scenic stops, interact with local communities, and experience the thrill of off-road riding in one of Southeast Asia's most picturesque regions. For those opting for multi-day tours, the adventure continues with camping under the stars, offering a truly immersive experience in nature.
+
+                <p className="font-body text-sm leading-relaxed">
+                  Riders can expect to traverse diverse terrains with experienced guides ensuring both excitement and safety. Along the journey, participants enjoy scenic stops and interact with local communities.
                 </p>
-                
-                <p className="font-body text-base md:text-xl text-foreground/85 leading-relaxed">
-                  Beyond just a dirt biking trip, Dust and Dirt creates unforgettable memories for adventurers who crave something beyond the usual tourist trails. Our commitment to high-quality bikes, professional guidance, and an adventurous spirit makes them a top choice for thrill-seekers visiting Laos. Whether you're an off-road enthusiast or a first-timer looking for a once-in-a-lifetime experience, Dust and Dirt promises an epic ride through the heart of the Lao wilderness.
+
+                <p className="font-body text-sm leading-relaxed">
+                  Dust and Dirt creates unforgettable memories for adventurers seeking authentic experiences beyond usual tourist trails. An epic ride through the heart of the Lao wilderness awaits!
                 </p>
               </div>
-            </CardContent>
+            </div>
           </div>
-        </Card>
+        </div>
 
         {/* Meet the Crew Section */}
         <div className="text-center mb-16 animate-fade-in">
@@ -93,8 +128,8 @@ export const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <Card 
-              key={member.name} 
+            <Card
+              key={member.name}
               className="bg-card border-border overflow-hidden group hover:border-primary transition-all duration-300 animate-zoom-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
@@ -112,9 +147,7 @@ export const About = () => {
                 <p className="font-body text-primary font-semibold mb-3">
                   {member.role}
                 </p>
-                <p className="font-body text-foreground/70">
-                  {member.bio}
-                </p>
+                <p className="font-body text-foreground/70">{member.bio}</p>
               </CardContent>
             </Card>
           ))}
