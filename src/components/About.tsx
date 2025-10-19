@@ -66,15 +66,15 @@ export const About = () => {
               {/* Content */}
               <CardContent className="p-8 flex flex-col justify-center">
                 <div className="space-y-6">
-                  <p className="font-body text-base md:text-lg text-foreground/85 leading-relaxed">
+                  <p className="font-body text-base md:text-2xl text-foreground/85 leading-relaxed">
                     A tour company that offers exhilarating off-road dirt bike experiences through the stunning landscapes of Laos. Designed for both beginners and experienced riders, their guided tours take adventurers deep into the rugged mountains just north of Vang Vieng, where breathtaking scenery, challenging trails, and an authentic outdoor experience await. Whether you're looking for a quick adrenaline rush or a multi-day adventure, Dust and Dirt provides a unique way to explore the unspoiled beauty of the Lao countryside.
                   </p>
 
-                  <p className="font-body text-base md:text-lg text-foreground/85 leading-relaxed">
+                  <p className="font-body text-base md:text-2xl text-foreground/85 leading-relaxed">
                     Riders can expect to traverse diverse terrains, from rocky paths and dense forests to open fields with panoramic mountain views. Our tours are well-structured to ensure both excitement and safety, with experienced guides leading the way and providing expert instruction. Along the journey, participants can enjoy scenic stops, interact with local communities, and experience the thrill of off-road riding in one of Southeast Asia's most picturesque regions. For those opting for multi-day tours, the adventure continues with camping under the stars, offering a truly immersive experience in nature.
                   </p>
 
-                  <p className="font-body text-base md:text-lg text-foreground/85 leading-relaxed">
+                  <p className="font-body text-base md:text-2xl text-foreground/85 leading-relaxed">
                     Beyond just a dirt biking trip, Dust and Dirt creates unforgettable memories for adventurers who crave something beyond the usual tourist trails. Our commitment to high-quality bikes, professional guidance, and an adventurous spirit makes them a top choice for thrill-seekers visiting Laos. Whether you're an off-road enthusiast or a first-timer looking for a once-in-a-lifetime experience, Dust and Dirt promises an epic ride through the heart of the Lao wilderness.
                   </p>
                 </div>

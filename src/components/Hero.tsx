@@ -22,7 +22,7 @@ export const Hero = () => {
         <div className="absolute top-1/2 left-1/2 w-[56.25vw] h-[100vh] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/y_RmOjkRXHk?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&fs=0&loop=1&playlist=y_RmOjkRXHk"
+            src="https://www.youtube.com/embed/y_RmOjkRXHk?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0&fs=0&loop=1&playlist=y_RmOjkRXHk&playsinline=1"
             title="Dust and Dirt Adventure"
             frameBorder="0"
             allow="autoplay; fullscreen"
