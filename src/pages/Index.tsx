@@ -10,20 +10,22 @@ import { Contract } from "@/components/Contract";
 import { Bikes } from "@/components/Bikes";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
+import { Reviews } from "@/components/Reviews";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background font-body">
-      <Navigation />
+        <Navigation />
       <Hero />
       <About />
+      <Bikes />
       <Trips />
+      <Reviews />
       <Jerseys />
       <Gallery />
       <Contact />
       <Location />
       <Contract />
-      <Bikes />
       <FAQ />
       <Footer />
     </div>

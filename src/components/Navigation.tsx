@@ -6,10 +6,11 @@ import logo from "@/assets/logo.png";
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "About", href: "#about" },
+  { label: "Bikes", href: "#bikes" },
   { label: "Trips", href: "#trips" },
+  { label: "Reviews", href: "#reviews" },
   { label: "Jerseys", href: "#jerseys" },
   { label: "Gallery", href: "#gallery" },
-  { label: "Bikes", href: "#bikes" },
   { label: "Contact", href: "#contact" },
   { label: "Location", href: "#location" },
   { label: "Contract", href: "#contract" },
@@ -25,8 +26,7 @@ export const Navigation = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      // Update active section based on scroll position
-      const sections = navItems.map(item => item.href.substring(1));
+      const sections = navItems.map((item) => item.href.substring(1));
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -60,18 +60,20 @@ export const Navigation = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+      className={`sticky top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? "bg-black/20 backdrop-blur-md shadow-lg" // semi-transparent frosted
+          : "bg-black/10 backdrop-blur-md"          // more transparent at top
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <div className="flex justify-center mb-4">
-            <img 
-              src={logo} 
-              alt="Dust and Dirt Logo" 
-              className="h-12 w-auto" 
-            />
+          {/* Logo + Tagline */}
+          <div className="flex items-center gap-3 mb-4 md:mb-0">
+            <img src={logo} alt="Dust and Dirt Logo" className="h-12 w-auto" />
+            <span className="text-lg md:text-xl font-display font-semibold text-primary whitespace-nowrap">
+              We'll Take You There
+            </span>
           </div>
 
           {/* Desktop Navigation */}
@@ -95,7 +97,7 @@ export const Navigation = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden active:bg-transparent focus:bg-transparent hover:bg-transparent"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
@@ -108,15 +110,15 @@ export const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 bg-card border-t border-border">
+          <div className="md:hidden py-4 bg-black/10 backdrop-blur-md border-t border-border rounded-b-2xl transition-all duration-300">
             {navItems.map((item) => (
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
                 className={`block w-full text-left px-4 py-3 font-display font-semibold transition-colors ${
                   activeSection === item.href.substring(1)
-                    ? "text-primary bg-secondary"
-                    : "text-foreground hover:text-primary hover:bg-secondary/50"
+                    ? "text-primary bg-primary/10" // slightly highlighted
+                    : "text-foreground hover:text-primary hover:bg-primary/20"
                 }`}
               >
                 {item.label}

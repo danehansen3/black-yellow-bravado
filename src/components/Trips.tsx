@@ -43,7 +43,7 @@ const trips = [
     },
   },
   {
-    title: "1 Night / 2 Day Adventure",
+    title: "Ride and Camp Adventure",
     image: trip3,
     description:
       "Experience the magic of overnight camping in the Lao wilderness. This 26-hour journey combines thrilling rides with authentic cultural immersion and starlit camping.",
@@ -60,7 +60,7 @@ const trips = [
     },
   },
   {
-    title: "2 Night / 3 Day Expedition",
+    title: "Can't Get Enough",
     image: trip4,
     description:
       "Our ultimate multi-day adventure through Laos' most spectacular terrain. Ride through villages, jungles, and mountains while experiencing authentic Lao hospitality.",
