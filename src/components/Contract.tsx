@@ -14,7 +14,7 @@ export const Contract = () => {
             TOUR <span className="text-primary">CONTRACT</span>
           </h2>
           <p className="font-body text-lg text-foreground/70 max-w-2xl mx-auto">
-            Review our tour agreement and waiver. All participants must read and 
+            Review our tour agreement and waiver. All riders must read and 
             accept these terms before embarking on any tour.
           </p>
         </div>

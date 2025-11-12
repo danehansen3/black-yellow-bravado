@@ -108,7 +108,7 @@ export const About = () => {
                 </p>
 
                 <p className="font-body text-xl leading-relaxed">
-                  Riders can expect to traverse diverse terrains with experienced guides ensuring both excitement and safety. Along the journey, participants enjoy scenic stops and interact with local communities.
+                  Riders can expect to traverse diverse terrains with experienced guides ensuring both excitement and safety. Along the journey, we enjoy scenic stops and interact with local communities.
                 </p>
 
                 <p className="font-body text-xl leading-relaxed">
