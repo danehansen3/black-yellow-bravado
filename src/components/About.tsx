@@ -3,7 +3,6 @@ import johnnie from "@/assets/johnnie.jpg";
 import mony from "@/assets/mony.jpg";
 import tar from "@/assets/tar.jpg";
 import richie from "@/assets/richie.jpg";
-import sarah from "@/assets/sarah.jpg";
 import aboutImage from "@/assets/gal3.jpg";
 
 const teamMembers = [
@@ -30,12 +29,6 @@ const teamMembers = [
     role: "Guide",
     bio: "Tour guide/marketing assistant. He has mastered scuba diving and now off-road riding, adventure is in his blood. A certified instructor full of energy and knowledge.",
     image: richie,
-  },
-  {
-    name: "Sarah Boswijk",
-    role: "Owner",
-    bio: "Cofounder of Dust & Dirt. A brilliant planner who can make things happen, she's who you can count on when it comes to organizing an unforgettable tour.",
-    image: sarah,
   },
 ];
 
