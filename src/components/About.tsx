@@ -3,6 +3,7 @@ import johnnie from "@/assets/johnnie.jpg";
 import mony from "@/assets/mony.jpg";
 import tar from "@/assets/tar.jpg";
 import richie from "@/assets/richie.jpg";
+import nick from "@/assets/nick.jpg";
 import aboutImage from "@/assets/gal3.jpg";
 
 const teamMembers = [
@@ -20,15 +21,21 @@ const teamMembers = [
   },
   {
     name: "Tar Chantavong",
-    role: "Guide",
+    role: "Guide & Mechanic",
     bio: "Head mechanic/expert tour guide. A very skilled off-road rider and a grease monkey, a guy with constant smiles and passionate enthusiasm for providing an unforgettable experience.",
     image: tar,
   },
   {
     name: "Richie Carr",
-    role: "Guide",
+    role: "Guide & Mechanic",
     bio: "Tour guide/marketing assistant. He has mastered scuba diving and now off-road riding, adventure is in his blood. A certified instructor full of energy and knowledge.",
     image: richie,
+  },
+  {
+    name: "Nick Weber",
+    role: "Guide & Mechanic",
+    bio: "With a background in long-distance solo motorcycle travel, Nick brings strong self-reliance, route awareness, and mechanical skill. Calm, reliable, and now focused on motocross, he combines an explorer’s mindset with a racing spirit on every ride.",
+    image: nick,
   },
 ];
 
