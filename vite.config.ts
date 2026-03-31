@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  assetsInclude: ["**/*.heic", "**/*.HEIC"],
+  assetsInclude: ["**/*.{jpg,JPG,jpeg,JPEG,png,PNG,heic,HEIC}"],
   build: {
     assetsInlineLimit: 0,
   },
