@@ -9,18 +9,18 @@ import trip5 from "@/assets/trip5.jpg";
 
 const trips = [
   {
-    title: "Endurance Half Day",
+    title: "Endurance Day Tour",
     image: trip1,
     description:
       "Dive deep into Laos' raw landscapes with this full half-day experience. Perfect for riders wanting extended exploration of Vang Vieng's hidden trails and stunning scenery.",
     highlights: [
-      "6-8 hours of guided riding",
+      "8 hours of guided riding",
       "Free dirt bike lessons included",
       "All safety gear provided",
       "Explore remote trails and villages",
     ],
     details: {
-      duration: "6-8 Hours",
+      duration: "8 Hours",
       price: "$250",
       group: "2-5 riders",
     },
@@ -31,13 +31,13 @@ const trips = [
     description:
       "Short on time but big on adventure? This express half-day tour packs maximum thrills into a compact timeframe, showcasing Vang Vieng's best trails.",
     highlights: [
-      "4-6 hours of guided riding",
+      "5-6 hours of guided riding",
       "Free dirt bike lessons included",
       "All safety gear provided",
       "Perfect for beginners and advanced riders",
     ],
     details: {
-      duration: "4-6 Hours",
+      duration: "5-6 Hours",
       price: "$155",
       group: "2-5 riders",
     },
