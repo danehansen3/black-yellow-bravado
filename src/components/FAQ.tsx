@@ -75,10 +75,10 @@ export const FAQ = () => {
                 value={`item-${index}`}
                 className="bg-card border-border rounded-lg px-6 border"
               >
-                <AccordionTrigger className="font-display text-left text-2xl font-semibold text-foreground hover:text-primary">
+                <AccordionTrigger className="font-display text-left text-2xl font-semibold text-foreground hover:text-primary tracking-wide">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="font-body text-xl font-medium text-foreground/80 leading-relaxed tracking-wide">
+                <AccordionContent className="font-body text-xl font-medium text-foreground/80 leading-relaxed tracking-wider">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
