@@ -4,7 +4,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 // Dynamically import all gallery images (gal* and rec*)
 const galleryModules = import.meta.glob<{ default: string }>(
-  "@/assets/{gal,rec}*.jpg",
+  "@/assets/gallery/*.{jpg,JPG,jpeg,JPEG,png,PNG,heic,HEIC}",
   { eager: true }
 );
 
