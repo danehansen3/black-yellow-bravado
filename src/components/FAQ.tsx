@@ -59,7 +59,7 @@ export const FAQ = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <HelpCircle className="h-12 w-12 text-primary mx-auto mb-4" />
-          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4 tracking-wide">
             FREQUENTLY ASKED <span className="text-primary">QUESTIONS</span>
           </h2>
           <p className="font-body text-xl text-foreground/70 max-w-2xl mx-auto">
