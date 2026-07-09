@@ -43,7 +43,7 @@ export const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 text-center animate-fade-in">
         <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 tracking-wide leading-tight">
-          FREE DIRT BIKE <br className="sm:hidden" /> LESSONS
+          THE HIGHLIGHT OF <br className="sm:hidden" /> YOUR JOURNEY
         </h1>
 
         <p className="font-body text-xl md:text-2xl text-foreground/90 mb-8 max-w-2xl mx-auto">

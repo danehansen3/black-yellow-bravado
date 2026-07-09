@@ -6,56 +6,61 @@ import trip2 from "@/assets/trip2.jpg";
 import trip3 from "@/assets/trip3.jpg";
 import trip4 from "@/assets/trip4.jpg";
 import trip5 from "@/assets/trip5.jpg";
+import trip6 from "@/assets/about.jpg";
 
 const trips = [
   {
-    title: "Endurance Day Tour",
-    image: trip1,
+    title: "Ride & Camp Adventure",
+    badge: "Most Popular",
+    image: trip3,
     description:
-      "Dive deep into Laos' raw landscapes with this full half-day experience. Perfect for riders wanting extended exploration of Vang Vieng's hidden trails and stunning scenery.",
+      "Our signature overnight adventure. Perfect for first-time riders and experienced off-road enthusiasts alike. Driving lessons are provided before the tour for beginners, allowing everyone to experience Laos' incredible backcountry safely.",
     highlights: [
-      "8 hours of guided riding",
-      "Free dirt bike lessons included",
-      "All safety gear provided",
-      "Explore remote trails and villages",
+      "Beginner & Premium routes available",
+      "Driving lessons included for beginners",
+      "1 Night / 2 Days adventure",
+      "Camping included",
+      "Professional local guide",
+      "Safety gear provided",
     ],
     details: {
-      duration: "8 Hours",
-      price: "$250",
+      duration: "1 Night / 2 Days",
       group: "2-5 riders",
     },
   },
   {
     title: "Quickie",
+    badge: "Second Most Popular",
     image: trip2,
     description:
-      "Short on time but big on adventure? This express half-day tour packs maximum thrills into a compact timeframe, showcasing Vang Vieng's best trails.",
+      "Perfect if you're short on time. Spend 3-6 hours exploring the beautiful trails surrounding Vang Vieng. Beginners receive driving lessons before the ride, while experienced riders can choose a more technical premium route.",
     highlights: [
-      "5-6 hours of guided riding",
-      "Free dirt bike lessons included",
-      "All safety gear provided",
-      "Perfect for beginners and advanced riders",
+      "3-6 hour day tour",
+      "Beginner & Premium options",
+      "Driving lessons included for beginners",
+      "Safety equipment provided",
+      "Perfect introduction to off-road riding",
     ],
     details: {
-      duration: "5-6 Hours",
-      price: "$155",
+      duration: "3-6 Hours",
       group: "2-5 riders",
     },
   },
   {
-    title: "Ride and Camp Adventure",
-    image: trip3,
+    title: "Endurance Day Tour",
+    image: trip1,
     description:
-      "Experience the magic of overnight camping in the Lao wilderness. This 26-hour journey combines thrilling rides with authentic cultural immersion and starlit camping.",
+      "Our premium full-day experience designed for riders looking for maximum time on challenging off-road terrain. This tour is intended for experienced riders seeking an extended adventure.",
     highlights: [
-      "26 hours of exploration",
-      "Free dirt bike lessons included",
-      "Overnight camping included",
-      "All meals and gear provided",
+      "Premium-only experience",
+      "8 hours of riding",
+      "100% off-road adventure",
+      "Advanced terrain",
+      "Professional guide",
+      "Safety gear included",
     ],
     details: {
-      duration: "1 Night / 2 Days",
-      price: "$185",
+      duration: "8 Hours",
       group: "2-5 riders",
     },
   },
@@ -63,16 +68,17 @@ const trips = [
     title: "Can't Get Enough",
     image: trip4,
     description:
-      "Our ultimate multi-day adventure through Laos' most spectacular terrain. Ride through villages, jungles, and mountains while experiencing authentic Lao hospitality.",
+      "The premium version of our Ride & Camp Adventure. Spend more time on technical trails and remote terrain while still enjoying an unforgettable overnight camping experience.",
     highlights: [
-      "52 hours of epic riding",
-      "Free dirt bike lessons included",
-      "2 nights camping under the stars",
-      "All meals, gear, and guides included",
+      "Premium-only route",
+      "1 Night / 2 Days",
+      "Longer and more technical riding",
+      "Camping included",
+      "Professional guides",
+      "Safety equipment included",
     ],
     details: {
-      duration: "2 Nights / 3 Days",
-      price: "$330",
+      duration: "1 Night / 2 Days",
       group: "2-5 riders",
     },
   },
@@ -80,19 +86,38 @@ const trips = [
     title: "Extended Action Pack",
     image: trip5,
     description:
-      "A premium overnight experience with extended riding time. This 28-hour adventure offers the perfect balance of riding intensity and cultural exploration.",
+      "Our ultimate premium expedition through the mountains of Laos. Two unforgettable nights of camping combined with the longest and most demanding riding we offer.",
     highlights: [
-      "28 hours of guided adventure",
-      "Free dirt bike lessons included",
-      "Overnight camping included",
-      "Premium trails and local experiences",
+      "Premium-only expedition",
+      "2 Nights / 3 Days",
+      "Longest riding distances",
+      "Remote mountain trails",
+      "Camping included",
+      "Meals and equipment provided",
     ],
     details: {
-      duration: "1 Night / 2 Days",
-      price: "$225",
+      duration: "2 Nights / 3 Days",
       group: "2-5 riders",
     },
   },
+  {
+    title: "Premium Off-Road Challenge",
+    image: trip6, 
+    description:
+      "Designed exclusively for experienced riders wanting an entire day of technical off-road riding. No pavement—just challenging trails, jungle terrain, river crossings, and mountain tracks.",
+    highlights: [
+      "Premium-only",
+      "8 hours of riding",
+      "100% off-road",
+      "Advanced terrain",
+      "Professional guide",
+      "Safety equipment provided",
+    ],
+    details: {
+      duration: "8 Hours",
+      group: "2-5 riders",
+    },
+  }
 ];
 
 export const Trips = () => {
@@ -114,9 +139,7 @@ export const Trips = () => {
             EPIC <span className="text-primary">ADVENTURES</span>
           </h2>
           <p className="font-body text-sm text-foreground/90 mb-4 leading-relaxed">
-            Experience the raw beauty of Laos on our guided tours. Free dirt
-            bike lessons included with every adventure. Perfect for beginners
-            and advanced riders exploring Vang Vieng's stunning terrain.
+            Whether you've never ridden a dirt bike before or you're an experienced off-road rider, we have an adventure for you. Driving lessons can be provided before every tour for beginners, while experienced riders can choose our Premium routes featuring longer rides and more technical terrain throughout the mountains of Laos.
           </p>
         </div>
 
@@ -144,13 +167,29 @@ export const Trips = () => {
                     {/* Content */}
                     <CardContent className="p-8 flex flex-col justify-between h-full">
                       <div>
-                        <h3 className="font-display text-3xl font-bold text-foreground mb-4">
-                          {trip.title}
-                        </h3>
+                        <h3 className="font-display text-3xl font-bold text-foreground mb-3">
+                        {trip.title}
+                      </h3>
 
-                        <p className="font-body text-sm text-foreground/90 mb-4 leading-relaxed">
-                          {trip.description}
-                        </p>
+                      {trip.badge && (
+                        <div className="mb-4">
+                          <span
+                            className={`inline-block rounded-full px-4 py-1 text-sm font-semibold ${
+                              trip.badge === "Most Popular"
+                                ? "bg-yellow-500/20 text-yellow-300"
+                                : "bg-orange-500/20 text-orange-300"
+                            }`}
+                          >
+                            {trip.badge === "Most Popular"
+                              ? "⭐ Most Popular"
+                              : "🔥 Second Most Popular"}
+                          </span>
+                        </div>
+                      )}
+
+                      <p className="font-body text-sm text-foreground/90 mb-4 leading-relaxed">
+                        {trip.description}
+                      </p>
 
                         {/* Highlights */}
                         <div className="mb-6">
